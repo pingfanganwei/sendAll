@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context="com.example.sms_send.activity.SMS_Activity" >
+
+    <EditText
+        android:id="@+id/phone_num_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:ems="20"
+        android:hint="号码" />
+
+    <EditText
+        android:id="@+id/message_text_et"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_marginTop="50dp"
+        android:ems="20"
+        android:hint="内容" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/load_contact_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="loadConcart"
+            android:text="加载" />
+
+        <Button
+            android:id="@+id/send_msg_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="send_message"
+            android:text="发送" />
+    </LinearLayout>
+
+</LinearLayout>
